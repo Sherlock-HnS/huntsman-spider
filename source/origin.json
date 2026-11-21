@@ -3,7 +3,21 @@
   "name": "huntsman-spider",
   "title": "[PILL PACK] Huntsman Spider",
   "author": "Blastnit",
-  "status": "pending_download",
-  "steamcmd_download_completed": false,
-  "reason": "SteamCMD bootstrap failed: execution sandbox network disabled; no original GMA installed."
+  "status": "extracted_verified",
+  "acquisition": "steamcmd",
+  "steamcmd_download_completed": true,
+  "source_workshop_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3593099022",
+  "source_archive_sha256": "c302c61b3700a1d935df594a7fca53e3a92aa541060dd50056541bcab384fb27",
+  "gma_header": {
+    "title": "[PILL PACK] Huntsman Spider",
+    "description": "{\"title\":\"[PILL PACK] Huntsman Spider\",\"type\":\"npc\",\"tags\":[\"fun\",\"realism\",\"scenic\"],\"ignore\":[]}",
+    "author": "Author Name",
+    "steam_id": "0",
+    "timestamp": 1761376284
+  },
+  "files": 33,
+  "payload_bytes": 15497482,
+  "roundtrip_verified": true,
+  "official_gmad_verified": true,
+  "packaging_exclusions": []
 }

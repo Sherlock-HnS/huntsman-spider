@@ -1,0 +1,20 @@
+"VertexlitGeneric"
+{
+    "$basetexture" "models/blastnit/husntamn/jackiespider/Spider_BaseColor"
+    "$bumpmap"     "models/blastnit/husntamn/jackiespider/Spider_Normal"
+
+    "$phong" "1"
+    "$phongboost" "0.1"                 
+    "$phongexponent" "10"               
+    "$phongfresnelranges" "[0.4 0.2 1]" 
+
+    "$basealphaenvmapmask" "0"
+
+    "$phongalbedotint" "1"
+    "$rimlight" "1"
+    "$rimlightexponent" "2"
+    "$rimlightboost" "0.1"
+
+    "$selfillum" "0"
+    "$nocull" "1"
+}

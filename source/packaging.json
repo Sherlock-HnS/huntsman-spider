@@ -1,0 +1,10 @@
+{
+  "source_files": 33,
+  "packed_files": 33,
+  "excluded_files": [],
+  "package_tags": [
+    "fun",
+    "realism"
+  ],
+  "verified_with": "gmad create + SHA-256 por arquivo"
+}

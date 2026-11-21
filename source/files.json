@@ -1,0 +1,200 @@
+[
+  {
+    "path": "lua/autorun/demonspider_blast.lua",
+    "size": 697,
+    "crc": 2593371503,
+    "sha256": "ba4acaccc25d6d1c9d2d94efce524c010404c2c255e645affb5f96b6402ce56f"
+  },
+  {
+    "path": "lua/autorun/include/demonspider_blast_pill.lua",
+    "size": 6050,
+    "crc": 2184232675,
+    "sha256": "9ee2d00565d7d874368bfd9ddf1225c2b67e4b6b4ba78c2f84e7a6a863552250"
+  },
+  {
+    "path": "lua/entities/webtrap/cl_init.lua",
+    "size": 71,
+    "crc": 2747678187,
+    "sha256": "d51ed3eba192cdd5ac76923a01ad49769587f290cc1ce54a7765151a743b733c"
+  },
+  {
+    "path": "lua/entities/webtrap/init.lua",
+    "size": 2166,
+    "crc": 4237529452,
+    "sha256": "76b3fd3bba481f2ccd2ca78aa253bbd1b80a79b36caf8b2e82a15ba9dfae9c4f"
+  },
+  {
+    "path": "lua/entities/webtrap/shared.lua",
+    "size": 111,
+    "crc": 1270755674,
+    "sha256": "e29f1906cfd57312a71ffbf90738673906f8adce1a675a51d0cbc1b81f7b9631"
+  },
+  {
+    "path": "materials/models/blast/spiderweb/web.vmt",
+    "size": 72,
+    "crc": 2151836704,
+    "sha256": "b357f47780da53c1300693e7458f1f4a22c10a5c0bb6f9ec038bc5dcc4cf4547"
+  },
+  {
+    "path": "materials/models/blast/spiderweb/web.vtf",
+    "size": 1398336,
+    "crc": 2691959013,
+    "sha256": "f3a0a7e63262dcbd9f41e93c799a3a7faefe8fcb4f91443f4c060ca8761f2938"
+  },
+  {
+    "path": "materials/models/blastnit/husntamn/jackiespider/spider.vmt",
+    "size": 506,
+    "crc": 1506546900,
+    "sha256": "bffd3ec50c9406780c308260ba7392ecf3765a476eb9811a270e301524fbaefa"
+  },
+  {
+    "path": "materials/models/blastnit/husntamn/jackiespider/spider_basecolor.vtf",
+    "size": 5592656,
+    "crc": 1072968649,
+    "sha256": "436bf1f71a129c81c835112239d34dfa60352caaebe9be787549efd1dcb55e28"
+  },
+  {
+    "path": "materials/models/blastnit/husntamn/jackiespider/spider_normal.vtf",
+    "size": 5592656,
+    "crc": 1449838875,
+    "sha256": "69da4cfa674c6d3778eaf23b27f735293905abc23f2dd9bfcef15f4185433658"
+  },
+  {
+    "path": "materials/models/spiderweb/web.vmt",
+    "size": 72,
+    "crc": 2151836704,
+    "sha256": "b357f47780da53c1300693e7458f1f4a22c10a5c0bb6f9ec038bc5dcc4cf4547"
+  },
+  {
+    "path": "materials/models/spiderweb/web.vtf",
+    "size": 1398336,
+    "crc": 1635678888,
+    "sha256": "5aebe763f48e23c301df01ba878ef18afb04388b1170c2255cef56fa3a4edc01"
+  },
+  {
+    "path": "materials/pill_blast_sider/bg.png",
+    "size": 17315,
+    "crc": 2786725863,
+    "sha256": "d4a27de9c16895555863264779c25972dbcd2d9819df5e9e0f9f05f9efa6b356"
+  },
+  {
+    "path": "materials/pill_blast_sider/boost.png",
+    "size": 89398,
+    "crc": 1083461398,
+    "sha256": "76d33e9e4fbb7993be0927fa0956f8793ba49bcee97aa3bed230194587820f5d"
+  },
+  {
+    "path": "materials/pill_blast_sider/camo.png",
+    "size": 71967,
+    "crc": 827457705,
+    "sha256": "33664ac4a474bee184222f0a589fa6717d81219dd25ba112f83a44c4c2b4f64c"
+  },
+  {
+    "path": "materials/pill_blast_sider/health.png",
+    "size": 199521,
+    "crc": 799770811,
+    "sha256": "66d4b033cf8c736269ed32d5bcfb0f0f187ad6a89c6305e9d6a86f7d87611421"
+  },
+  {
+    "path": "materials/pill_blast_sider/healthbg.png",
+    "size": 62495,
+    "crc": 3616720490,
+    "sha256": "5beaf2f9bec82aa4a39253de307ae9ac1e0e965411a0ef8177958977ab0e219c"
+  },
+  {
+    "path": "materials/pill_blast_sider/trap.png",
+    "size": 129773,
+    "crc": 3689974865,
+    "sha256": "d227c5c0b235488dc856a4e1e41dc2a6790e5673698574925559f16cb44d03bb"
+  },
+  {
+    "path": "materials/pills/pill_blast_sider.png",
+    "size": 185119,
+    "crc": 2006287368,
+    "sha256": "b940f0f6f7ef789c9cdc91808cde3335888df561a8ec6cfccaa7df9cd4cc8bac"
+  },
+  {
+    "path": "models/blastnit/husntamn/jackiespider.dx90.vtx",
+    "size": 63770,
+    "crc": 3520784047,
+    "sha256": "070741ccfe1867d930679a982fa42b6880ab6d75bfc958214e0aaa47e811f47f"
+  },
+  {
+    "path": "models/blastnit/husntamn/jackiespider.mdl",
+    "size": 65648,
+    "crc": 1662667432,
+    "sha256": "ed3c75d1834ca3ce46039054323418127376796e74ae5dc0d2fe64f6031a0c64"
+  },
+  {
+    "path": "models/blastnit/husntamn/jackiespider.vvd",
+    "size": 225664,
+    "crc": 3278539477,
+    "sha256": "de4ce12cf4dbe425d11523c52d24035d0d76d6501fbb63009a4d4ed12659a76c"
+  },
+  {
+    "path": "models/spiderweb/spiderweb.dx90.vtx",
+    "size": 11206,
+    "crc": 3727916050,
+    "sha256": "5b5a51076f25a2bfb5244a17f2e02ab932ae73ac752ddd4ad1b2e86779d84abb"
+  },
+  {
+    "path": "models/spiderweb/spiderweb.mdl",
+    "size": 1684,
+    "crc": 2919097174,
+    "sha256": "c0677d44bf55b611a786607fefacacb05b7ee9267d0ad855e333ad44c65ff7c5"
+  },
+  {
+    "path": "models/spiderweb/spiderweb.phy",
+    "size": 1653,
+    "crc": 528859799,
+    "sha256": "3a9d3871c77b96e99aebfc0a91025cea7413db65c5dec3113bf8946d0eb20184"
+  },
+  {
+    "path": "models/spiderweb/spiderweb.vvd",
+    "size": 56192,
+    "crc": 1357115385,
+    "sha256": "616f757674768ee5c74ce31ef42e81f1dea78f203d1b29fa9196c63c09044bd5"
+  },
+  {
+    "path": "sound/spiderbite2.wav",
+    "size": 227068,
+    "crc": 3937707205,
+    "sha256": "9ffa42f6085774bc8cae9e19cb3b4e66e1540519bab180da30ac113e754e4acb"
+  },
+  {
+    "path": "sound/spiderstep1.wav",
+    "size": 21464,
+    "crc": 477213889,
+    "sha256": "f7bc442eeaccb4a72b4dc626df4466610548eb79fc55372764d6f36e99e42301"
+  },
+  {
+    "path": "sound/spiderstep2.wav",
+    "size": 13668,
+    "crc": 1895394143,
+    "sha256": "8d36b2712921025279a6c2c425af365f1884e7ec5a4a4ac62c004de0fc73dd09"
+  },
+  {
+    "path": "sound/spiderstep3.wav",
+    "size": 9264,
+    "crc": 2318031614,
+    "sha256": "015d33e3e4c22186b9892d3a8fe9fb724e802ac0c84642a19b07637b3c6145a2"
+  },
+  {
+    "path": "sound/spiderstep4.wav",
+    "size": 25412,
+    "crc": 2928097726,
+    "sha256": "79727fb2786b4286f27db75420046918e2d78fe287217e764ebcc0280386587e"
+  },
+  {
+    "path": "sound/spiderstep5.wav",
+    "size": 9084,
+    "crc": 4123910289,
+    "sha256": "a14c583d52a1b081b75e0b2eb335e46a6fa64a29041f0efeb5996bc9f1fe1db6"
+  },
+  {
+    "path": "sound/spiderstep6.wav",
+    "size": 18388,
+    "crc": 1795644593,
+    "sha256": "1f18c73bb52c5b0fc1e16d62d67d0fb5e9179823fffbc94af0a157df88121d73"
+  }
+]

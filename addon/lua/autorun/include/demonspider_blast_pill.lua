@@ -30,6 +30,8 @@ pk_pills.register('pill_blast_sider', {
         {
             name = "Night Vision",
             key = KEY_F,
+            hnsKeyLabel = "F",
+            hnsIcon = "night_vision.png",
             cooldown = 1,
             mat = Material("night_vision.png", "smooth"),
             func = function(ply, pill) end -- Client Stuff
@@ -37,6 +39,8 @@ pk_pills.register('pill_blast_sider', {
         {
             name = "Web Trap",
             key = KEY_E,
+            hnsKeyLabel = "E",
+            hnsIcon = "pill_blast_sider/trap.png",
             cooldown = 10,
             mat = Material("pill_blast_sider/trap.png", "smooth"),
             func = function(ply, pill)
@@ -68,6 +72,8 @@ pk_pills.register('pill_blast_sider', {
         {
             name = "Camo",
             key = KEY_R,
+            hnsKeyLabel = "R",
+            hnsIcon = "pill_blast_sider/camo.png",
             cooldown = 10,
             mat = Material("pill_blast_sider/camo.png", "smooth"),
             func = function(ply, pill)
@@ -134,6 +140,8 @@ pk_pills.register('pill_blast_sider', {
         {
             name = "Boost",
             key = "PASSIVE",
+            hnsKeyLabel = "PASSIVA",
+            hnsIcon = "pill_blast_sider/boost.png",
             cooldown = 10,
             mat = Material("pill_blast_sider/boost.png", "smooth"),
             func = function(ply, pill)
@@ -183,7 +191,7 @@ pk_pills.register('pill_blast_sider', {
     attack = {
         mode = 'trigger',
         func = function(ply, ent)
-            SlashModules.Jumpscare(ply)
+            return SlashModules.Jumpscare(ply)
         end
     },
     attack2 = {
@@ -197,4 +205,12 @@ pk_pills.register('pill_blast_sider', {
     flashlight = function(ply, ent)
     end,
     jump = function(ply, ent) end,
-})
+}, function(form)
+    -- The legacy damage branches are for Sandbox and NPCs.
+    form.hnsKillAPI = true
+    form.hnsAbilities = {
+        { id = "attack", name = "Ataque", key = IN_ATTACK, OnUse = form.attack.func },
+    }
+    form.attack, form.attack2, form.reload = nil, nil, nil
+    SlashModules.ConfigureHNSAbilities(form)
+end)

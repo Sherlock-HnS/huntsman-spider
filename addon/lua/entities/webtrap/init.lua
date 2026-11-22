@@ -32,12 +32,21 @@ function ENT:BitePlayer(ply)
 	newPos.y = self:GetPos().y
 	ply:SetPos(newPos)
 
-	ply:TakeDamage(10, self:GetOwner())
+	if SherlockHNS then
+        ply:SetNWEntity("blast_web_trap", self)
+        self:CallOnRemove("ReleaseHNSWeb", function()
+            if IsValid(ply) and ply:GetNWEntity("blast_web_trap") == self then
+                ply:SetNWEntity("blast_web_trap", NULL)
+            end
+        end)
+    else
+        ply:TakeDamage(10, self:GetOwner())
+    end
     
 	ply:EmitSound("physics/flesh/flesh_squishy_impact_hard1.wav", 125)
     --ply:SetEyeAngles((self:GetPos()-ply:GetPos()):Angle())
     
-    ply:HangEffect({
+    SlashModules.ApplyTargetEffect(ply, self:GetOwner(), {
         name = "Web Trapped",
         time = 999,
         trapEnt = self,
@@ -48,6 +57,10 @@ function ENT:BitePlayer(ply)
     end
 
     local hKey = tostring(self)
+    self:CallOnRemove("RemoveWebInput", function()
+        hook.Remove("KeyPress", hKey)
+        if IsValid(ply) and ply:HasEffect("Web Trapped") then ply:TakeEffect("Web Trapped", 999) end
+    end)
     hook.Add("KeyPress", hKey, function(ply2, key)
         if !IsValid(ply) or !IsValid(self) then
             if IsValid(self) then
@@ -78,7 +91,20 @@ function ENT:StartTouch(ent)
     if self.TOUCHED or !IsValid(ent) or !ent:IsPlayer() then return end
     if IsValid(ent.pk_pill_ent) or ent:HasEffect("Web Trapped") then return end
 
+    if SherlockHNS and (not IsValid(self:GetOwner()) or not SherlockHNS.CanTarget(ent, self:GetOwner())) then return end
     self.TOUCHED = true
     
     self:BitePlayer(ent)
+end
+
+function ENT:Think()
+    if SherlockHNS and not self.TOUCHED then
+        local mins, maxs = self:WorldSpaceAABB()
+        for _, target in ipairs(ents.FindInBox(mins, maxs)) do
+            self:StartTouch(target)
+            if self.TOUCHED then break end
+        end
+    end
+    self:NextThink(CurTime() + 0.1)
+    return true
 end

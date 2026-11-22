@@ -1,4 +1,4 @@
-[PILL PACK] Huntsman Spider
+# [PILL PACK] Huntsman Spider
 
 ![Workshop preview](workshop-preview.jpg)
 
